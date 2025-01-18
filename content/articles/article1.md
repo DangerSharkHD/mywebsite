@@ -1,10 +1,10 @@
 +++
 title = "Backtesting option strategies without historical option market data"
-draft = false
+draft = true
 +++
 
 
-<!-- ![My Logo](http://localhost:1313/images/logo1.png) -->
+<!-- ![My Logo](/images/logo1.png) -->
 
 
 ## Introduction

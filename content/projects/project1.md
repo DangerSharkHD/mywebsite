@@ -1,10 +1,9 @@
 +++
 title = "Gladiators Tale"
 draft = false
-images = ["images/logo1.png"]
 +++
 
-![My Logo](http://localhost:1313/images/logo1.png)
+![My Logo](images/logo1.png)
 
 ## About this Game
 

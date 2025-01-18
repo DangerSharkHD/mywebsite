@@ -6,7 +6,7 @@ list = false
 +++
 
 
-{{< figure align=center src="/images/Front.jpg" height="300">}}
+{{< figure align=center src="images/Front.jpg" height="300">}}
 
 # Hi, I'm Xavier!
 Welcome to my website, where I showcase projects, tips, and much more.

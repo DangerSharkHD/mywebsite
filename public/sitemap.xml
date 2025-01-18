@@ -2,24 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dangersharkhd.github.io/mywebsite/articles/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-01-07T14:16:31+00:00</lastmod>
   </url><url>
-    <loc>https://dangersharkhd.github.io/mywebsite/projects/</loc>
-    <lastmod>2025-01-07T14:16:31+00:00</lastmod>
-  </url><url>
-    <loc>https://dangersharkhd.github.io/mywebsite/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-04T14:16:31+00:00</lastmod>
   </url><url>
-    <loc>https://dangersharkhd.github.io/mywebsite/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-04T13:31:38+00:00</lastmod>
   </url><url>
-    <loc>https://dangersharkhd.github.io/mywebsite/articles/article1/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://dangersharkhd.github.io/mywebsite/categories/</loc>
+    <loc>http://localhost:1313/projects/project1/</loc>
   </url><url>
-    <loc>https://dangersharkhd.github.io/mywebsite/projects/project1/</loc>
-  </url><url>
-    <loc>https://dangersharkhd.github.io/mywebsite/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
