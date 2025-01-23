@@ -5,4 +5,4 @@ title = ''
 +++
 
 Welcome to the articles section. Check out:
-- [Backtesting option strategies without historical option data](/articles/article1/)
+- [Backtesting option strategies without historical option data](./article1/)
