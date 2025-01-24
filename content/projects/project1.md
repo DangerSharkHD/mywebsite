@@ -3,7 +3,7 @@ title = "Gladiators Tale"
 draft = false
 +++
 
-![My Logo](/images/logo1.png)
+![My Logo](/mywebsite/images/logo1.png)
 
 ## About this Game
 
