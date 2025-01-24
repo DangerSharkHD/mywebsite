@@ -67,7 +67,13 @@ This strategy allows shorting volatility with downside protection. However, it w
 
 This strategy was expected to perform well since it gives exposure to Delta and shorts volatility. However, this was not the case.
 
-![CC](/mywebsite/images/article1/PutWritingStrat.png)
+![PC](/mywebsite/images/article1/PutCreditSpread.png)
+
+### Long ATM Calls
+
+This strategy seems to be the most profitable according to this model. Buying calls offers a position that is both long underlying and volatility which seems to be favorable based on this model.
+
+![CB](/mywebsite/images/article1/Calls.png)
 
 ## Conclusion
 
@@ -77,7 +83,7 @@ Nevertheless, this made me realize how efficient the market is and prevented me 
 
 Unfortunately it doesn't allow for more complex strategies such as implementing stop-loss, since this model should be unreliable at calculating prices of contracts with expiration date of less than 30 days.
 
-This being said, I do not recommend implementing a strategy just based on this model.
+This being said, I do not recommend implementing a strategy just based on this model. There is high suspicion that this model is biased towards less implied volatility, especially for closer to the money options which is unsurprising since current market conditions are quite stable.
 
-On a brighter note, this model can be used to evaluate how the current option market is priced, and how this contracts would have played out at different market conditions in the past.
+On a brighter note, this model can be used to evaluate how the current option market is priced, especially regarding skew. For example, I can suspect that current skew is low and ATM calls are cheap considering their profitability in this model.
 
