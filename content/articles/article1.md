@@ -21,7 +21,7 @@ This article shows an alternative method on how to backtest options strategies w
 
 The goal is to backtest common option strategies. The main challenge will be obtaining a reliable estimate of the price the option contract was likely trading. The VIX index is [calculated](https://www.sfu.ca/~poitras/419_VIX.pdf) by the average price of the OTM (out-of-the-money) option contracts with approximately 30 days to expiration. This calculation does not rely on the black-scholes formula which solving for variance would not be possible by simple algebraic means.
 
-To estimate the price of the option contract, the black-scholes formula was used. This allows to easily and quickly obtain an aproximation of the market value of the contract from the current VIX.
+To estimate the price of the option contract, the black-scholes formula was used. This allows to easily and quickly obtain an approximation of the market value of the contract from the current VIX.
 
 However, since there is a significant and negative correlation between volatility and the underlying, option prices are adjusted to this phenomena in accordance to the Efficient Market Hypothesis. Thus, option prices have something called skew, which is evident in the increased implied volatility of lower strike options. Since the VIX calculation eliminates the information about skew, the prices are adjusted to the current skew.
 
@@ -43,21 +43,31 @@ Several option strategies were tested:
 
 This strategy slightly underperformed the underlying, mostly likely due to the strong bull market during this period.
 
+![CC](/mywebsite/images/article1/CoveredCallstrat.png)
+
 ### Put writing
 
 Selling ATM Puts returned a small gain, considering this contracts offer a strong hedge, such a small return is unexpected.
+
+![PW](/mywebsite/images/article1/PutWritingStrat.png)
 
 ### Short Straddle
 
 This strategy shows underperformance during this period. This is a bit surprising since, in general, implied volatility is usually above historical.
 
+![CC](/mywebsite/images/article1/ShortStraddle.png)
+
 ### Iron Butterfly
 
 This strategy allows shorting volatility with downside protection. However, it was shown to not be very successful. In fact, the opposite strategy would have performed very well.
 
+![CC](/mywebsite/images/article1/IronButterfly.png)
+
 ### Put credit spread
 
 This strategy was expected to perform well since it gives exposure to Delta and shorts volatility. However, this was not the case.
+
+![CC](/mywebsite/images/article1/PutWritingStrat.png)
 
 ## Conclusion
 
