@@ -5,5 +5,5 @@ title = ''
 +++
 
 Welcome to the projects section. Check out:
-- [Gladiators Tale](project/project1/)
+- [Gladiators Tale](/projects/project1/)
 - [My Itch.io page](https://dangersharkhd.itch.io)
