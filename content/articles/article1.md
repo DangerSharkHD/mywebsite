@@ -43,37 +43,37 @@ Several option strategies were tested:
 
 This strategy slightly underperformed the underlying, mostly likely due to the strong bull market during this period.
 
-![CC](/mywebsite/images/article1/CoveredCallstrat.png)
+![CC](/images/article1/CoveredCallstrat.png)
 
 ### Put writing
 
 Selling ATM Puts returned a small gain, considering this contracts offer a strong hedge, such a small return is unexpected.
 
-![PW](/mywebsite/images/article1/PutWritingStrat.png)
+![PW](/images/article1/PutWritingStrat.png)
 
 ### Short Straddle
 
 This strategy shows underperformance during this period. This is a bit surprising since, in general, implied volatility is usually above historical.
 
-![CC](/mywebsite/images/article1/ShortStraddle.png)
+![CC](/images/article1/ShortStraddle.png)
 
 ### Iron Butterfly
 
 This strategy allows shorting volatility with downside protection. However, it was shown to not be very successful. In fact, the opposite strategy would have performed very well.
 
-![CC](/mywebsite/images/article1/IronButterfly.png)
+![CC](/images/article1/IronButterfly.png)
 
 ### Put credit spread
 
 This strategy was expected to perform well since it gives exposure to Delta and shorts volatility. However, this was not the case.
 
-![PC](/mywebsite/images/article1/PutCreditSpread.png)
+![PC](/images/article1/PutCreditSpread.png)
 
 ### Long ATM Calls
 
 This strategy seems to be the most profitable according to this model. Buying calls offers a position that is both long underlying and volatility which seems to be favorable based on this model.
 
-![CB](/mywebsite/images/article1/Calls.png)
+![CB](/images/article1/Calls.png)
 
 ## Conclusion
 
