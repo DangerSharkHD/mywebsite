@@ -22,6 +22,11 @@ theme = "papermod"
     url = "/projects/"
     weight = 3
 
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = 4
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

@@ -52,9 +52,9 @@ It was found that the strategy with the highest sharpe ratio had the allocation:
 - GC=F: 35%
 - TLT: 20%
 
-CAGR: 0.107
-Sharpe: 0.860
-Max Drawdown: 25.6%
+CAGR: 0.107;
+Sharpe: 0.860;
+Max Drawdown: 25.6%.
 
 ![image](/images/article2/BestSharp1.png)
 
@@ -65,11 +65,9 @@ The leveraged versions of the ETFs gave even better results:
 - GC=F: 30%
 - TLT: 30%
 
-CAGR: 0.287
-
-Sharpe: 0.878
-
-Max Drawdown: 61.6%
+CAGR: 0.287;
+Sharpe: 0.878;
+Max Drawdown: 61.6%.
 
 ![image](/images/article2/BestSharp2.png)
 

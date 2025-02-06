@@ -110,7 +110,7 @@ This can be especially interesting when we add leveraged versions of the previou
   "keywords": [
     
   ],
-  "articleBody": "Introduction Optimizing portfolio allocation seems, at first sight, quite a boring and pointless task.\nMany people might think that it is impossible to generate substantial returns by adjusting the allocation of value in ETFs that have historically underperformed the S\u0026P500.\nThat is obviously not true, allocating value in uncorrelated assets reduces overall portfolio volatility and increases risk adjusted returns.\nThis can be especially interesting when we add leveraged versions of the previous ETFs. Thus, allowing to beat the market in an absolute and risk adjusted basis.\nMethods Idea For this article, four ETFs will be used: SPY, QQQ, GC=F, TLT.\nFor the less experienced readers:\nSPY tracks the most significant 500 companies of NYSE and NASDAQ.\nQQQ tracks the most significant 100 companies of NASDAQ which is composed of mainly tech companies.\nGC=F tracks gold price.\nTLT tracks 20+ year US treasury bonds.\nFor this test, only the previous 20 years will be considered, from 2005 to 2025.\nImplementation The data was fetched with yfinance and processed with pandas.\nIn an initial attempt backtrader was used, however, it was found that this method was too slow, taking over 3 seconds to run a single backtest.\nFor this reason I decided to implement a custom backtest that was significantly faster taking only 300ms to run. Further optimization would be possible but at this point the extra effort would not give substantial improvements.\nAll possible weight combinations (representing portfolio allocation) with a step of 5% were tested. And the strategy with the highest sharpe ratio was chosen.\nThe 3X leverage version of the previous ETFs were calculated by multiplying the daily return by 3 and subctracting a daily fee of 0.01%.\nResults It was found that the strategy with the highest sharpe ratio had the allocation:\nSPY: 5% QQQ: 40% GC=F: 35% TLT: 20% CAGR: 0.107 Sharpe: 0.860 Max Drawdown: 25.6%\nThe leveraged versions of the ETFs gave even better results:\nSPY: 10% QQQ: 30% GC=F: 30% TLT: 30% CAGR: 0.287\nSharpe: 0.878\nMax Drawdown: 61.6%\nConclusion This is quite a surprising result, after learning obtaining this results I started reallocating my portfolio more into QQQ and Gold.\nI have high confidence on the weight values obtained, as they are backtested on a long time period and are unlikely to be overfitted.\nStill, I would not advise to follow this exact allocation, an higher percentage allocated in SPY would give a wider market reach.\nI expect to continue this work and use a function to dynamically adjust the weights based on current market conditions that will be chosen based on major indices such as the VIX.\n",
+  "articleBody": "Introduction Optimizing portfolio allocation seems, at first sight, quite a boring and pointless task.\nMany people might think that it is impossible to generate substantial returns by adjusting the allocation of value in ETFs that have historically underperformed the S\u0026P500.\nThat is obviously not true, allocating value in uncorrelated assets reduces overall portfolio volatility and increases risk adjusted returns.\nThis can be especially interesting when we add leveraged versions of the previous ETFs. Thus, allowing to beat the market in an absolute and risk adjusted basis.\nMethods Idea For this article, four ETFs will be used: SPY, QQQ, GC=F, TLT.\nFor the less experienced readers:\nSPY tracks the most significant 500 companies of NYSE and NASDAQ.\nQQQ tracks the most significant 100 companies of NASDAQ which is composed of mainly tech companies.\nGC=F tracks gold price.\nTLT tracks 20+ year US treasury bonds.\nFor this test, only the previous 20 years will be considered, from 2005 to 2025.\nImplementation The data was fetched with yfinance and processed with pandas.\nIn an initial attempt backtrader was used, however, it was found that this method was too slow, taking over 3 seconds to run a single backtest.\nFor this reason I decided to implement a custom backtest that was significantly faster taking only 300ms to run. Further optimization would be possible but at this point the extra effort would not give substantial improvements.\nAll possible weight combinations (representing portfolio allocation) with a step of 5% were tested. And the strategy with the highest sharpe ratio was chosen.\nThe 3X leverage version of the previous ETFs were calculated by multiplying the daily return by 3 and subctracting a daily fee of 0.01%.\nResults It was found that the strategy with the highest sharpe ratio had the allocation:\nSPY: 5% QQQ: 40% GC=F: 35% TLT: 20% CAGR: 0.107; Sharpe: 0.860; Max Drawdown: 25.6%.\nThe leveraged versions of the ETFs gave even better results:\nSPY: 10% QQQ: 30% GC=F: 30% TLT: 30% CAGR: 0.287; Sharpe: 0.878; Max Drawdown: 61.6%.\nConclusion This is quite a surprising result, after learning obtaining this results I started reallocating my portfolio more into QQQ and Gold.\nI have high confidence on the weight values obtained, as they are backtested on a long time period and are unlikely to be overfitted.\nStill, I would not advise to follow this exact allocation, an higher percentage allocated in SPY would give a wider market reach.\nI expect to continue this work and use a function to dynamically adjust the weights based on current market conditions that will be chosen based on major indices such as the VIX.\n",
   "wordCount" : "434",
   "inLanguage": "en",
   "datePublished": "2025-02-05T14:16:31Z",
@@ -186,6 +186,11 @@ This can be especially interesting when we add leveraged versions of the previou
                     <span>Projects</span>
                 </a>
             </li>
+            <li>
+                <a href="https://xavierlopes.com/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -239,9 +244,9 @@ This can be especially interesting when we add leveraged versions of the previou
 <li>GC=F: 35%</li>
 <li>TLT: 20%</li>
 </ul>
-<p>CAGR: 0.107
-Sharpe: 0.860
-Max Drawdown: 25.6%</p>
+<p>CAGR: 0.107;
+Sharpe: 0.860;
+Max Drawdown: 25.6%.</p>
 <p><img alt="image" loading="lazy" src="/images/article2/BestSharp1.png"></p>
 <p>The leveraged versions of the ETFs gave even better results:</p>
 <ul>
@@ -250,9 +255,9 @@ Max Drawdown: 25.6%</p>
 <li>GC=F: 30%</li>
 <li>TLT: 30%</li>
 </ul>
-<p>CAGR: 0.287</p>
-<p>Sharpe: 0.878</p>
-<p>Max Drawdown: 61.6%</p>
+<p>CAGR: 0.287;
+Sharpe: 0.878;
+Max Drawdown: 61.6%.</p>
 <p><img alt="image" loading="lazy" src="/images/article2/BestSharp2.png"></p>
 <h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
 <p>This is quite a surprising result, after learning obtaining this results I started reallocating my portfolio more into QQQ and Gold.</p>

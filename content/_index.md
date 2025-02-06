@@ -17,4 +17,7 @@ My interest cover a wide range of topics from Game Development, AI, Finance, Eng
 ## Featured Projects
 - [Gladiators Tale: Game](./projects/project1/) - A video game about gladiators developed by me.
 
+## Check out my Articles
+- [Articles](./articles/)
+
 
