@@ -6,3 +6,4 @@ title = ''
 
 Welcome to the articles section. Check out:
 - [Backtesting option strategies without historical option data](./article1/)
+- [Optimizing Portfolio Allocation Across Major ETFs](./article2/)
